@@ -156,8 +156,31 @@ body
    color:white;
    font-weight: 500;
 }
+
 .contactInfo.Education h4
 {
    color:white;
    font-weight: 300;
+}
+.contactInfo.programmingLang
+{
+    margin-bottom: 5px;
+}
+.contactInfo.programmingLang .percent
+{
+   position: relative;
+   width: 100%;
+   height: 6px;
+   background: rgba(11, 11, 39, 0.863);
+   display: block;
+}
+
+.contactInfo.programmingLang .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(0, 157, 255);
+
 }
