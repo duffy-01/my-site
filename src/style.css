@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Sedan', serif;
+}
+
+.sedan-regular 
+{
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.sedan-regular-italic 
+{
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+body
+{
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* setting up block of color*/
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 25px 55px rgba(1, 1, 1, 0.1);
+}
+
+.container .leftSide
+{
+    position: relative;
+    background: rgba(31, 31, 109, 0.863);
+    padding: 40px;
+}
+
+.container .rightSide
+{
+    position: relative;
+    background: whitesmoke;
+    padding: 40px;
+}
+
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+/* profile image*/
+.profileText .imageBox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 60%;
+    overflow: hidden;
+}
+
+.profileText .imageBox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* profile text*/
+.profileText h2
+{
+    color: white;
+    font-size: 1.4em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span
+{
+    color: white;
+    font-weight: 100;
+}
+
+
+.title
+{
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+.contactInfo u1
+{
+    position: relative;
+}
+
+.contactInfo u1 li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo u1 li .icon
+{
+    display:inline-block;
+    width: 30px;
+    font: size 18px;
+    color: rgb(0, 157, 255);
+}
+
+.contactInfo u1 li span
+{
+    color: white;
+    font-weight: 300;
+}
+
+.contactInfo.Education li
+{
+    margin-bottom: 15px;
+}
+
+.contactInfo.Education h5
+{
+    color:rgb(0, 157, 255);
+    font-weight: 700;
+}
+
+.contactInfo.Education h4:nth-child(2)
+{
+   color:white;
+   font-weight: 500;
+}
+
+.contactInfo.Education h4
+{
+   color:white;
+   font-weight: 300;
+}
+.contactInfo.programmingLang
+{
+    margin-bottom: 5px;
+}
+.contactInfo.programmingLang .percent
+{
+   position: relative;
+   width: 100%;
+   height: 6px;
+   background: rgba(11, 11, 39, 0.863);
+   display: block;
+}
+
+.contactInfo.programmingLang .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(0, 157, 255);
+
+}
